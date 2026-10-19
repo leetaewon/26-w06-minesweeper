@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지뢰찾기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1>지뢰찾기</h1>
+    <div class="status">
+      <span>💣 <span id="mines">10</span></span>
+      <button id="restart" type="button" aria-label="재시작">🙂</button>
+      <span>⏱ <span id="timer">0</span></span>
+    </div>
+    <div id="board" class="board" role="grid"></div>
+    <p class="hint">숫자 칸을 좌+우 동시 클릭(또는 휠 클릭)하면 주변을 한 번에 엽니다.</p>
+    <p id="message" class="message"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
